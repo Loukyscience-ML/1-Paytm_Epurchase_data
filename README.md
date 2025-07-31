@@ -31,49 +31,49 @@ from sklearn.metrics import classification_report, accuracy_score, f1_score, con
 from sklearn.pipeline import Pipeline
 from sklearn.compose import ColumnTransformer
 
-![Library Imports](images/1_imports.png)
+![Library Imports](images/1_imports.png?raw=true)
 
 📥 Dataset Loading and Exploration
 Load dataset using pandas
 
 Display basic info and initial rows
 
-![Dataset Head](images/2_head.png)
+![Dataset Head](images/2_head.png?raw=true)
 
-![Dataset Info](images/3_info.png)
+![Dataset Info](images/3_info.png?raw=true)
 
 Descriptive Statistics
 
-![Descriptive Statistics](images/4_describe.png)
+![Descriptive Statistics](images/4_describe.png?raw=true)
 
 📈 Correlation Analysis
 Compute and visualize the correlation matrix.
 
-![Correlation Heatmap](images/5_corr_heatmap.png)
+![Correlation Heatmap](images/5_corr_heatmap.png?raw=true)
 
-![Correlation Code](images/6_corr_code.png)
+![Correlation Code](images/6_corr_code.png?raw=true)
 
 📊 Feature Distributions
 Histograms of all numerical features
 
-![Numerical Feature Histograms](images/7_histograms.png)
+![Numerical Feature Histograms](images/7_histograms.png?raw=true)
 
 📊 Categorical Data Analysis
 Count plots for Payment_Method
 
-![Payment Method Count Plot](images/8_payment_method.png)
+![Payment Method Count Plot](images/8_payment_method.png?raw=true)
 
 Count plots for Sale_Flag, Product_Gender, Category_Grouped
 
-![Sale Flag, Product Gender, and Category Grouped Count Plots](images/9_3_countplots.png)
+![Sale Flag, Product Gender, and Category Grouped Count Plots](images/9_3_countplots.png?raw=true)
 
 
 🚨 Outlier Detection
 Identified outliers using statistical methods (e.g., IQR)
 
-![Outlier Detection Code](images/10_outlier_code.png)
+![Outlier Detection Code](images/10_outlier_code.png?raw=true)
 
-![Outlier Detection Output](images/11_outlier_output.png)
+![Outlier Detection Output](images/11_outlier_output.png?raw=true)
 
 🧼 Missing Values & Cleaning
 Dropped irrelevant column Family
@@ -82,7 +82,7 @@ Replaced nulls in Product_Gender with "UNISEX" for "Home" category
 
 Standardized text data (lowercase, trimmed)
 
-![Missing Value Handling](images/12_null_handling.png)
+![Missing Value Handling](images/12_null_handling.png?raw=true)
 
 🧪 Model Training Pipeline
 Applied preprocessing via ColumnTransformer
@@ -99,12 +99,13 @@ XGBoost
 
 Evaluated using Accuracy & F1 Score
 
-![Model Training Pipeline](images/13_model_pipeline.png)
+![Model Training Pipeline](images/13_model_pipeline.png?raw=true)
+
 
 📊 Model Performance Comparison
 Bar plot comparing models based on Accuracy & F1 Score.
 
-![Model Performance Comparison](images/14_model_comparison.png)
+![Model Performance Comparison](images/14_model_comparison.png?raw=true)
 
 🔁 Cross-Validation
 Used 3-fold cross-validation with F1 scoring to assess generalizability.
@@ -120,7 +121,7 @@ for model_name, model in models.items():
     f1_scores = cross_val_score(pipeline, X, y, cv=3, scoring="f1")
     ...
 
-![Cross-Validation Results](images/15_crossval.png)
+![Cross-Validation Results](images/15_crossval.png?raw=true)
 
 🏆 Final Model & Exported Results
 Selected XGBoost as final model.
