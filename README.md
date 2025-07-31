@@ -30,44 +30,50 @@ from xgboost import XGBClassifier
 from sklearn.metrics import classification_report, accuracy_score, f1_score, confusion_matrix
 from sklearn.pipeline import Pipeline
 from sklearn.compose import ColumnTransformer
-📸 ![Imports](images/1_imports.png)
+
+📸 ![Library Imports](images/1_imports.png)
 
 📥 Dataset Loading and Exploration
 Load dataset using pandas
 
 Display basic info and initial rows
 
-📸 ![Imports](images/2_head.png)
-📸 ![Imports](images/3_info.png)
+📸 ![Dataset Head](images/2_head.png)
+
+📸 ![Dataset Info](images/3_info.png)
 
 Descriptive Statistics
-📸 ![Imports](images/4_describe.png)
+
+📸 ![Descriptive Statistics](images/4_describe.png)
 
 📈 Correlation Analysis
 Compute and visualize the correlation matrix.
 
-📸 ![Imports](images/5_corr_heatmap.png)
-📸 ![Imports](images/6_corr_code.png)
+📸 ![Correlation Heatmap](images/5_corr_heatmap.png)
+
+📸 ![Correlation Code](images/6_corr_code.png)
 
 📊 Feature Distributions
 Histograms of all numerical features
 
-📸 ![Imports](images/7_histograms.png)
+📸 ![Numerical Feature Histograms](images/7_histograms.png)
 
 📊 Categorical Data Analysis
 Count plots for Payment_Method
 
-📸 ![Imports](images/8_payment_method.png)
+📸 ![Payment Method Count Plot](images/8_payment_method.png)
 
 Count plots for Sale_Flag, Product_Gender, Category_Grouped
 
-📸 ![Imports](images/9_3_countplots.png)
+📸 ![Sale Flag, Product Gender, and Category Grouped Count Plots](images/9_3_countplots.png)
+
 
 🚨 Outlier Detection
 Identified outliers using statistical methods (e.g., IQR)
 
-📸 ![Imports](images/10_outlier_code.png)
-📸 ![Imports](images/11_outlier_output.png)
+📸 ![Outlier Detection Code](images/10_outlier_code.png)
+
+📸 ![Outlier Detection Output](images/11_outlier_output.png)
 
 🧼 Missing Values & Cleaning
 Dropped irrelevant column Family
@@ -76,7 +82,7 @@ Replaced nulls in Product_Gender with "UNISEX" for "Home" category
 
 Standardized text data (lowercase, trimmed)
 
-📸 ![Imports](images/12_null_handling.png)
+📸 ![Missing Value Handling](images/12_null_handling.png)
 
 🧪 Model Training Pipeline
 Applied preprocessing via ColumnTransformer
@@ -93,12 +99,12 @@ XGBoost
 
 Evaluated using Accuracy & F1 Score
 
-📸 ![Imports](images/13_model_pipeline.png)
+📸 ![Model Training Pipeline](images/13_model_pipeline.png)
 
 📊 Model Performance Comparison
 Bar plot comparing models based on Accuracy & F1 Score.
 
-📸 ![Imports](images/14_model_comparison.png)
+📸 ![Model Performance Comparison](images/14_model_comparison.png)
 
 🔁 Cross-Validation
 Used 3-fold cross-validation with F1 scoring to assess generalizability.
@@ -113,7 +119,8 @@ for model_name, model in models.items():
     ])
     f1_scores = cross_val_score(pipeline, X, y, cv=3, scoring="f1")
     ...
-📸 ![Imports](images/15_crossval.png)
+
+📸 ![Cross-Validation Results](images/15_crossval.png)
 
 🏆 Final Model & Exported Results
 Selected XGBoost as final model.
