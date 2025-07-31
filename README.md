@@ -31,7 +31,7 @@ from sklearn.metrics import classification_report, accuracy_score, f1_score, con
 from sklearn.pipeline import Pipeline
 from sklearn.compose import ColumnTransformer
 
-![Library Imports](images/1_imports.png?raw=true)
+![Library Imports](images/1_imports.png)
 
 📥 Dataset Loading and Exploration
 Load dataset using pandas
