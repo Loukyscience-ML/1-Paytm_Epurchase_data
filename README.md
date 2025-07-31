@@ -30,44 +30,44 @@ from xgboost import XGBClassifier
 from sklearn.metrics import classification_report, accuracy_score, f1_score, confusion_matrix
 from sklearn.pipeline import Pipeline
 from sklearn.compose import ColumnTransformer
-📸 images/1_imports.png
+📸 ![Imports](images/1_imports.png)
 
 📥 Dataset Loading and Exploration
 Load dataset using pandas
 
 Display basic info and initial rows
 
-📸 images/2_head.png
-📸 images/3_info.png
+📸 ![Imports](images/2_head.png)
+📸 ![Imports](images/3_info.png)
 
 Descriptive Statistics
-📸 images/4_describe.png
+📸 ![Imports](images/4_describe.png)
 
 📈 Correlation Analysis
 Compute and visualize the correlation matrix.
 
-📸 images/5_corr_heatmap.png
-📸 images/6_corr_code.png
+📸 ![Imports](images/5_corr_heatmap.png)
+📸 ![Imports](images/6_corr_code.png)
 
 📊 Feature Distributions
 Histograms of all numerical features
 
-📸 images/7_histograms.png
+📸 ![Imports](images/7_histograms.png)
 
 📊 Categorical Data Analysis
 Count plots for Payment_Method
 
-📸 images/8_payment_method.png
+📸 ![Imports](images/8_payment_method.png)
 
 Count plots for Sale_Flag, Product_Gender, Category_Grouped
 
-📸 images/9_3_countplots.png
+📸 ![Imports](images/9_3_countplots.png)
 
 🚨 Outlier Detection
 Identified outliers using statistical methods (e.g., IQR)
 
-📸 images/10_outlier_code.png
-📸 images/11_outlier_output.png
+📸 ![Imports](images/10_outlier_code.png)
+📸 ![Imports](images/11_outlier_output.png)
 
 🧼 Missing Values & Cleaning
 Dropped irrelevant column Family
@@ -76,7 +76,7 @@ Replaced nulls in Product_Gender with "UNISEX" for "Home" category
 
 Standardized text data (lowercase, trimmed)
 
-📸 images/12_null_handling.png
+📸 ![Imports](images/12_null_handling.png)
 
 🧪 Model Training Pipeline
 Applied preprocessing via ColumnTransformer
@@ -93,12 +93,12 @@ XGBoost
 
 Evaluated using Accuracy & F1 Score
 
-📸 images/13_model_pipeline.png
+📸 ![Imports](images/13_model_pipeline.png)
 
 📊 Model Performance Comparison
 Bar plot comparing models based on Accuracy & F1 Score.
 
-📸 images/14_model_comparison.png
+📸 ![Imports](images/14_model_comparison.png)
 
 🔁 Cross-Validation
 Used 3-fold cross-validation with F1 scoring to assess generalizability.
@@ -113,7 +113,7 @@ for model_name, model in models.items():
     ])
     f1_scores = cross_val_score(pipeline, X, y, cv=3, scoring="f1")
     ...
-📸 images/15_crossval.png
+📸 ![Imports](images/15_crossval.png)
 
 🏆 Final Model & Exported Results
 Selected XGBoost as final model.
