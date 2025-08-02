@@ -169,6 +169,10 @@ results_df = pd.DataFrame({
 })
 results_df.to_csv("model_results.csv", index=False)
 ```
+## Dashboards images - Power Bi
+![Dashboard Preview 1](images/DB.PV1.png)
+
+![Dashboard Preview 2](images/DB.PV.png)
 
 ---
 
@@ -196,4 +200,5 @@ pip install -r requirements.txt
 ## ✨ Author
 
 **Major Khaled** — Data Scientist 🚀  
+
 Project built with ❤️ and Python.
